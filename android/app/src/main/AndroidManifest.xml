@@ -1,9 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.untitled2">
+          xmlns:tools="http://schemas.android.com/tools" package="com.example.untitled2">
    <application
-        android:label="untitled2"
+        android:label="مواقيت الصلاه"
         android:icon="@mipmap/ic_launcher">
-        <activity
+       <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
+           <intent-filter>
+               <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+           </intent-filter>
+       </receiver>
+       <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+
+       <activity
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
             android:name=".MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
@@ -38,4 +47,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+    <uses-permission android:name="andrpid.permission.INTERNET"/>
+    <uses-permission android:name="andrpid.permission.VIBRATE"/>
+    <uses-permission android:name="andrpid.permission.RECIEVE_BOOT_COMPLETED"/>
 </manifest>
