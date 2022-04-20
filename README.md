@@ -1,6 +1,5 @@
-# untitled2
+# get Prayer times and Every prayer is authorized
 
-A new Flutter project.
 
 ## Getting Started
 
