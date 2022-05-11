@@ -1,14 +1,16 @@
-name: untitled2
+name: Prayer_time
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
   sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
+  flutter_screenutil: ^5.4.0+1
+  flutter_svg: ^1.0.3
   intl: ^0.17.0
   flutter:
     sdk: flutter
@@ -17,6 +19,16 @@ dependencies:
   flutter_launcher_icons: ^0.9.2
   geolocator: ^8.0.5
   audioplayers: ^0.20.1
+  flutter_vector_icons: ^1.0.0
+  custom_splash: ^0.0.2
+  shared_preferences: ^2.0.13
+  animated_text_kit: ^1.1.0
+  percent_indicator: ^4.0.1
+  liquid_progress_indicator: ^0.4.0
+  awesome_notifications: ^0.6.21
+  kf_drawer: ^1.2.1
+  drag_and_drop_lists: ^0.3.2+2
+  animated_background: ^1.0.5
 
 flutter_icons:
   android: true
@@ -39,19 +51,20 @@ flutter:
     - Images/img1.png
     - Images/img2.png
     - Images/img4.jpg
-    - Images/img5.jpg
     - Images/img6.jpg
     - Images/img7.jpg
     - Images/img9.png
     - Images/img12.jpg
     - Images/img25.jpg
     - Images/img26.jpg
-    - Images/img29.jpg
     - Images/img32.jpg
     - Images/fajr2.jpg
     - Images/asr1.jpg
     - Images/maghrib1.jpg
     - Images/isha2.jpg
+    - Images/night.jpg
+    - Images/night2.jpg
+    - Images/sapah.jpg
 
   fonts:
     - family: BungeeShade
